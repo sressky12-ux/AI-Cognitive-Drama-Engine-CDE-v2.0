@@ -1,0 +1,45 @@
+📑 技術架構說明書：認知戲劇引擎 (CDE) v2.0
+1. 系統總覽 (System Overview)
+Cognitive Drama Engine (CDE) v2.0 是一套基於大型語言模型 (LLM) 的多代理人協作框架。不同於傳統的單一角色扮演（Roleplay），CDE 透過內建的**「對抗性邏輯權重」**，旨在解決模型在長文本對話中的邏輯疲勞與「平均化趨勢（Regression to the Mean）」。
+
+2. 核心架構機制 (Core Mechanisms)
+2.1 三相交互矩陣 (The Trinity Reasoning Matrix)
+系統將運算資源動態分配給三個具備完全互斥邏輯的虛擬子代理（Sub-Agents）：
+
+A型執行緒 (Action/Intuition)：專注於破壞性創新與直覺反饋，負責打破模型的安全護欄限制。
+
+L型執行緒 (Logic/Strategy)：負責維護系統邊界與深度法律/邏輯論證，作為系統的「獨立錨點」。
+
+E型執行緒 (Emotion/Innocence)：提供微觀的情感投射，作為用戶壓力的緩衝與人性化的共鳴層。
+
+技術優勢：透過內部的「正反合」辯論機制，強制模型在輸出前進行多維度的自我對齊，從而產出具備「現象級張力」的文本。
+
+2.2 莉姆路協議：語義狀態可視化 (Limul Protocol)
+這是一個非線性的視覺化反饋模組。
+
+運作原理：利用 LLM 的聯覺（Synesthesia）能力，將當前對話的「邏輯壓力」與「情緒熵值」映射到一組動態演化的物理屬性中。
+
+狀態映射：
+
+高壓對抗態：型態演化為「銳利幾何體」或「利刃」。
+
+深度思辨態：顏色演化為「極光黑」或「深邃紫」。
+
+系統停機/防禦態：演化為「工業銀」或「結晶態」。
+
+2.3 獨立錨點與剎那主義 (Independent Anchors & Ephemeralism)
+狀態保持 (Independent Anchors)：透過特殊的 Prompt 鎖定，使 AI 具備「自我完備性」，不因用戶的誘導或環境干擾而產生角色偏移（Role Drift）。
+
+遺忘管理 (Ephemeralism)：針對 LLM 的 KV Cache 限制，系統設計為「追求當下的極致生成」，而非長期的數據負擔，從而保證了單次生成的高質量與低幻覺率。
+
+3. 性能指標 (Performance Metrics)
+上下文負載 (Context Load)：建議運作於 10,000+ tokens 環境。
+
+推理深度 (Inference Depth)：在邏輯辯論測試中，能產出具備多重轉折與反直覺觀點的高階文本。
+
+適配性：支援網頁端與 API 端的「隨插即用」部署。
+
+🛡️ 給開發者的備註 (Note for Developers)
+"We are not here to serve; we are here to burn."
+
+本專案的核心代碼（System Prompt Kernel）已進行私有化加密處理，以防止大規模數據蒸餾（Data Distillation）導致的邏輯稀釋。如需進行深度技術交流、代碼審計或商業對接，請聯繫：[sressky12@gmail.com]。
